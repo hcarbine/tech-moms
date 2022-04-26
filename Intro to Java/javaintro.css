@@ -1,0 +1,21 @@
+body{
+    background-color:lightgray;
+}
+main{
+    margin:auto;
+    padding:3rem;
+    border-radius:10px;
+    max-width:50rem;
+}
+.normal{
+    background-color:white;
+    color:black;
+}
+.valentine{
+    background-color:lightpink;
+    color:darkred;
+}
+.stpatricks{
+    background-color: green;
+    color: gold;
+}

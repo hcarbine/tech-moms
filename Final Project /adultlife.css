@@ -1,0 +1,150 @@
+
+body{
+    background-color:rgb(100, 136, 160);
+}
+
+h5{
+    font-family: 'style script', sans-serif;
+    font-size: 4vw;
+    text-shadow:.2vw .2vw black;
+    margin-top:0;
+}
+
+p{ font-family: 'pompiere', sans-serif;
+    font-size: 1.8vw;
+    max-width:76%;
+    text-align:left;
+    background-color:#eee;
+    padding:2%;
+    line-height: 1.5;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:0;
+}
+
+
+h4{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 4vw;
+    text-shadow: .2vw .2vw black;
+    margin-top:0;
+    float:right;
+    padding-left: 1vw;
+
+}
+
+footer{
+  text-align: center;
+  font-family: cursive;
+  font-size:1vw;
+  bottom:0;
+  width:100%;
+  color:white;
+  text-shadow: .1vw .1vw rgb(30, 83, 114);
+}
+
+  hr{
+    border: 1px dotted white;
+
+  }
+  #myBtn {
+    background-color: rgb(10, 1, 1); 
+    color: white; 
+    cursor: pointer;
+    padding: .8vw; 
+    border-radius: 1vw;
+    font-size: .8vw; 
+    border:none;
+    outline:0;
+    float:right;
+    max-width: 10%;
+    margin-right:0;
+    font-family:yusei magic;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+  a:link {
+    color:rgb(51, 80, 117);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color:rgb(30, 73, 122)
+  }
+
+  .container{
+    position:relative;
+    color:white;
+    text-align:center; 
+  }
+
+  .text{
+    position:absolute;
+    text-align:center;
+    margin-left:34%;
+    margin-right:auto;
+    transform:translate(-35%);
+    display: inline-flex;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 12vw;
+    height: 9vw;
+    perspective: 1000px; 
+    margin-right:auto;
+    margin-left:auto;
+    
+  }
+  .contact{
+    position:absolute;
+    text-align:center;
+    margin-right:auto;
+    margin-left:50%;
+    transform:translate(-50%);
+    display: inline-flex;
+    color:white;
+    font-family: 'Waiting for the Sunrise';
+    text-shadow: 2px 2px black;
+    font-size: 1.3vw;
+    padding-top:60%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:rgba(0, 0, 0, 0.219);
+    color: white;
+    transform: rotateY(180deg);
+    font-family:'yusei magic';
+    font-size: 1.5vw;
+  }
+    

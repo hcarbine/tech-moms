@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<header>
+		<h1>JavaScript Variable Practice</h1>
+		<p>Look at the following code segements.  For each one do the following:
+		</p>
+		<ul>
+			<li>Predict the Output</li>
+			<li>Check the Answer</li>
+			<li>Discuss why or why not the answer was what you predicted</li>
+			
+		</ul>
+	</header>
+		<ol>
+	<li><div class = "question">	
+			<p><pre>
+var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+alert("Number of Languages: " + language.length);
+</pre><button id = "btnOne">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div class = "question">
+			<p><pre>
+var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+var input = prompt("Enter a number from 0 to " + language.length);
+alert(language[input] + " Rocks!");</pre><button id = "btnTwo">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div class = "question">
+			<p><pre>
+var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+//Modify the lastPos variable to use the length property 
+//to allow it to print the last item in the list
+var lastPos = 0;  
+alert(language[lastPos] + " is the last language in the list");</pre><button id = "btnThree">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div class = "question">
+			<p><pre>
+var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+for(var i = 0; i < language.length; i++){
+	alert(langauge[i]);
+}</pre><button id = "btnFour">Check Answer</button></p>
+
+		</div></li>
+		<li><div class = "question">
+			<p><pre>
+document.getElementById("btnFive").onclick = function() {
+	 var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+	 displayList(language, "divFive");
+};
+
+function displayList(lst, location){
+	 var str = "&lt;ol&gt;";
+	 for(var i = 0; i &ltp lst.length; i++){
+		 str += "&lt;li&gt;" + lst[i] + "&lt;/li&gt;";
+	 }
+	 str += "&lt;/ol&gt;";
+	 document.getElementById(location).innerHTML = str;
+}</pre><button id = "btnFive">Check Answer</button><br><div id = "divFive"></div></p>
+
+		</div></li>
+		<li><div class = "question">
+			<p><pre>var newList = []; //Defined Globally (not in function)
+				
+var input = prompt("Enter a shopping list item: ");
+newList.push(input);
+displayList(newList, "divSix");</pre><button id = "btnSix">Check Answer</button><div id = "divSix"></div></p>
+
+		</div></li>
+		<li><div class = "question">
+			<p><pre>//Create an array of your favorite bands named bands  
+//Use the displayList function to display the list in divSeven</pre><button id = "btnSeven">Check Answer</button><div id = "divSeven"></div></p>
+
+		</div></li>
+		<li><div class = "question">
+		<p><pre>var language = ["Javascript", "Java", "c++", "HTML", "CSS", "Python"];
+langauge.sort();
+langauge.reverse();
+displayList(language, "divEight");</pre><button id = "btnEight">Check Answer</button><div id = "divEight"></div></p>
+
+		</div></li>
+
+
+		<li><div class = "question">
+			<p><pre>var dieRolls = [];
+var input = prompt("How many times do you want to roll a die?")
+for(var i = 0; i < input; i++){
+	var die = Math.floor(Math.random() * 6 + 1);
+	dieRolls.push(die);
+}
+displayList(dieRolls, "divNine");</pre><button id = "btnNine">Check Answer</button><div id = "divNine"></div></p>
+
+		</div></li>
+
+		<li><div class = "question">
+			<p><pre>//Display a list of 10 random numbers with a range of 1-100 by following the steps
+//Create an empty numbers array
+//Create a random number with a range of 1 to 100
+//Add that random number to your array 10 times
+//Sort the array from highest to lowest
+//Display the array in a div named divTen</pre><button id = "btnTen">Check Answer</button><div id = "divTen"></div></p>
+		</div></li>
+
+
+		<li><div class = "question">
+			<p><pre>var zooAnimal = ["zebra", "tiger", "lion", "giraffe", "peacock", "bear", 
+		"elephant", "camel", "monkey", "otter"];
+var input = prompt("Enter an animal");
+var exists = 0;
+for(var i = 0; i < zooAnimal.length; i++){
+	if(zooAnimal[i] == input){
+		exists = 1;
+	}
+}
+if(exists == 0){
+	alert("Sorry, we do not have that animal");
+}
+else{
+	alert("Yes, that animal is in our zoo");
+}</pre><button id = "btnEleven">Check Answer</button></p>
+		</div></li>
+
+
+		<li><div class = "question">
+			<p><pre>//Complete the missing section of the method 
+//Two arrays of 20 random dice rolls
+var dice1 = get20DiceRolls();
+var dice2 = get20DiceRolls();
+//Variable to count the number of times the user rolled "doubles"
+var countDoubles = 0;
+
+//Count the number of times the 
+
+alert("Amount of doubles: " + countDoubles)
+document.getElementById("divTwelve").innerHTML = 
+		"Dice 1 Rolls: " + dice1.toString() + "&lt;br&gt;" +
+		"Dice 2 Rolls: " + dice2.toString();</pre><button id = "btnTwelve">Check Answer</button><div id = "divTwelve"></div></p>
+		</div></li>
+
+		<li><div class = "question">
+			<p><pre>/********************************************************** 
+* Your turn:  Magic Eight Ball
+* Create an app similar to the Magic Eight Ball.  
+* When the user clicks the button, it will give a random 
+* response.  Create an array of responses.  Then create
+* a random number within the range of your responses
+* Display the random response in a div named divThirteen  
+********************************************************/
+</pre><button id = "btnThirteen">Check Answer</button><div id = "divThirteen"></div></p>
+		</div></li>
+
+
+		</ol>
+		
+    <script src="script.js"></script>
+  </body>
+</html>

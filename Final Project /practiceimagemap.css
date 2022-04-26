@@ -1,0 +1,15 @@
+.image-map {
+    background: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+    width: 272px;
+    height: 92px;
+    display: block;
+    position: relative;
+    margin-top:10px;
+    float: left;
+  }
+  
+  .image-map > a.map {
+    position: absolute;
+    display: block;
+    border: 1px solid green;
+  }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<header>
+		<h1>JavaScript Variable Practice</h1>
+		<p>Look at the following code segements.  For each one do the following:
+		</p>
+		<ul>
+			<li>Predict the Output</li>
+			<li>Check the Answer</li>
+			<li>Discuss why or why not the answer was what you predicted</li>
+			
+		</ul>
+	</header>
+		<ol>
+	<li><div>	
+			<p><pre>
+var language = "Javascript";
+alert(language + " Rocks!");</pre><button id = "btnOne">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div>
+			<p><pre>
+var language = "Javascript";
+alert("language" + " Rocks!");</pre><button id = "btnTwo">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div>
+			<p><pre>
+var num = 4 + 2;
+alert("No Quotes: " + num);</pre><button id = "btnThree">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div>
+			<p><pre>
+var num = "4" + "2";
+alert("Quotes: " + num);</pre><button id = "btnFour">Check Answer</button></p>
+
+		</div></li>
+		<li><div>
+			<p><pre>
+var num = 12 + 6 / 3;
+alert("Order of Operations: " + num);</pre><button id = "btnFive">Check Answer</button></p>
+
+		</div></li>
+		<li><div>
+			<p><pre>alert("Adding " + 4 + 2);</pre><button id = "btnSix">Check Answer</button></p>
+
+		</div></li>
+		<li><div>
+			<p><pre>alert("Adding " + (4 + 2));</pre><button id = "btnSeven">Check Answer</button></p>
+
+		</div></li>
+		<li><div>
+			<p><pre>alert("Modulus " + 17 % 3);</pre><button id = "btnEight">Check Answer</button></p>
+
+		</div></li>
+
+
+		<li><div>
+			<p><pre>alert("Divide " + 17 / 3);</pre><button id = "btnNine">Check Answer</button></p>
+
+		</div></li>
+
+		<li><div>
+			<p><pre>alert("ParseInt " + parseInt(17 / 3));</pre><button id = "btnTen">Check Answer</button></p>
+		</div></li>
+
+
+		<li><div>
+			<p><pre>alert("ToFixed " + parseFloat.(17 / 3).toFixed(2));</pre><button id = "btnEleven">Check Answer</button></p>
+		</div></li>
+
+
+		<li><div>
+			<p><pre>var num = prompt("Enter a number");
+alert("You entered: " + num);</pre><button id = "btnTwelve">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p><pre>var txt = prompt("Enter a number");
+alert("Adding two " + txt + 2);</pre><button id = "btnThirteen">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p><pre>var txt = prompt("Enter a number");
+var num = parseInt(txt);
+alert("Adding two: " + num + 2);</pre><button id = "btnFourteen">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p><pre>var txt = prompt("Enter a word");
+var num = txt.length;
+alert("Length: " + num);</pre><button id = "btnFifteen">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p><pre>
+var txt = prompt("Enter a word");
+var letter = txt.charAt(0);
+alert("Char At: " + letter);</pre><button id = "btnSixteen">Check Answer</button></p>
+		</div></li>
+
+
+		<li><div>
+			<p><pre>var txt = prompt("Enter a word");
+var num = prompt("Enter a number less then " + txt.length);
+alert("Char At: " + txt.charAt(num));</pre><button id = "btnSeventeen">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p>Look in the script.js file.  Scroll down towards the end of the script. Modify the code to make it print out the last position of the word the user enters.<pre>var txt = prompt("Enter a word");
+var end = ________;  <em>//Modifiy this code to be the last position in the word</em>
+alert("Last Letter: " + txt.____________); <em>//Modify this code to print out the character at the last position</em></pre><button id = "btnEighteen">Check Answer</button></p>
+		</div></li>
+		<li><div>
+			<p>Look in the script.js file.  Scroll down towards the second to last script. Modify the code to make it print out the remainder of the number divided by 2.<pre>	var num = prompt("Enter a number");
+	var ans = 0;  //Modifiy this code to be the remainder of the number divided by 2
+	alert("Remainder: " + num);</pre><button id = "btnNineteen">Check Answer</button></p>
+		</div></li>
+
+		<li><div>
+			<p>Look in the script.js file.  Scroll down to the very last script. </p>
+			<p>Write your own code to allow the user to enter the current tempature.  The program will report the same tempature in Celsius.  You may need to research the equation to make the conversion.</p>
+			<p>Have the answer display to two decimal places.</p>
+			<button id = "btnTwenty">Calculate Celsius</button>
+		</div></li>
+
+
+		</ol>
+		
+    <script src="script.js"></script>
+  </body>
+</html>

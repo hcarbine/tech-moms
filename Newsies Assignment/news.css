@@ -1,0 +1,27 @@
+body{
+    background-color: beige;
+}
+h1{
+    font-size:xx-large;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: cyan;
+}
+h2{
+    font-family:monospace;
+}
+.beach{
+    float:left;
+    padding:3px;
+    margin-left:1rem;
+    margin-right:1rem;
+    display:flex;flex-flow:column;
+}
+p{
+  display:inline-block; 
+  width:25%;
+  font-family:serif;
+  margin:auto;
+  padding:1em;
+  font-size:larger
+}

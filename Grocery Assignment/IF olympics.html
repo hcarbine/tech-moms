@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><pre></pre><button id = "btnOne">Is 5 greater than 3?</button></p>
+    <p><pre></pre><button id = "btnTwo">Is length of "cat" 3?</button></p>
+    <p><pre></pre><button id = "btnThree">Does Cat=Dog?</button></p>
+    <p><pre></pre><button id = "btnFour">Are they old enough?</button></p>
+    <p><pre></pre><button id = "btnFive">Can they go to the movie?</button></p>
+
+    <script>
+        document.getElementById("btnOne").onclick=function(){
+                if(5>3)
+            alert("is greater than");
+        }
+
+        document.getElementById("btnTwo").onclick=function(){
+            var cat= "cat"
+                if(cat.length === 3);
+            alert("is the length");
+        }
+        document.getElementById("btnThree").onclick=function(){
+                if("cat" === "dog")
+                alert("are the same");
+                else {
+            alert("not the same");}
+        }
+
+        var person = {
+                name: "Bobby",
+                age: 12
+            }
+        
+        document.getElementById("btnFour").onclick=function(){
+            if(person.age >= 18)
+            alert(person.name + " is allowed")
+            else{
+                alert(person.name + " is not allowed")
+            }
+            
+        }
+
+        var person = {
+                name: "Bobby",
+                age: 12
+                str1
+            }
+
+        document.getElementById("btnFive").onclick=function(){
+            let str1 = person.name
+            if(str1.startsWith(B))
+            alert(person.name + " is allowed")
+            else{
+                alert(person.name + " is not allowed")
+            }
+    </script>
+    <script src="IF olympics.js"></script>
+    
+</body>
+</html>
